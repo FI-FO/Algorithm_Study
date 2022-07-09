@@ -5,9 +5,10 @@ const rl = readline.createInterface({
 	output: process.stdout,
 })
 
-let input = []
+let input
 
-rl.on("line", line => input.push(Number(line)))
+rl.on("line", line => input = line)
 rl.on("close", () => {
-	console.log(input[0] - input[1])
+	const [a, b] = input.split(" ").map(num => parseInt(num))
+	console.log(a - b)
 })

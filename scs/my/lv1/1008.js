@@ -7,11 +7,8 @@ const rl = readline.createInterface({
 
 let input
 
-rl.on("line", line => {
-	input = line.split(" ").map(num => Number(num))
-	rl.close()
-})
+rl.on("line", line => input = line)
 rl.on("close", () => {
-	const [ a, b ] = input
+	const [a, b] = input.split(" ").map(num => parseInt(num))
 	console.log(a / b)
 })
