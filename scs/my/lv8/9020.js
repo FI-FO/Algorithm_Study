@@ -34,11 +34,12 @@ rl.on("close", () => {
 		if(inputNumber % 2 === 0) {
 			let answer = []
 			for(let j = 0; prime[j] <= inputNumber / 2; j++) {
-				console.log(j, prime[j])
+				console.log(j, prime[j], inputNumber - prime[j])
 				const index = prime.indexOf(inputNumber - prime[j])
 				console.log(index, prime[index])
 				if(index !== -1) answer.push([prime[j], prime[index]])
 			}
+			console.log(answer)
 			
 			if(answer.length !== 0) {
 				const last = answer.pop()
