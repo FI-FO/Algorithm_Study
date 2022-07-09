@@ -19,7 +19,7 @@ rl.on("close", () => {
 	for(let i = 0; i < t; i++) {
 		const k = input.shift()
 		const n = input.shift()
-		const house = Array.from(Array(k + 1), () => Array(n + 1).fill(0))
+		const house = new Array(k + 1).fill(0).map(() => new Array(n + 1).fill(0))
 
 		for(let j = 1; j <= n; j++) {
 			house[0][j] = j
