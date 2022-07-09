@@ -19,12 +19,7 @@ rl.on("close", () => {
 		let alphaIDX = alpha.indexOf(input[i])
 		count[alphaIDX]++
 	}
-	
-	let max = count[0]
-	for (let j = 1; j < count.length; j++) {
-		if(max < count[j]) max = count[j]
-	}
-
+	let max = Math.floor(...count)
 	const maxFilter = count.filter((ele) => ele === max)
 	if (maxFilter.length > 1) {
 		console.log("?")
