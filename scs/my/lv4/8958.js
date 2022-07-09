@@ -11,7 +11,7 @@ rl.on("line", line => input.push(line))
 
 rl.on("close", () => {
 	const n = parseInt(input.shift())
-	for(let i = 0; i < input.length; i++) {
+	for(let i = 0; i < n; i++) {
 		let total = 0
 		let now = 0
 		const inputArray = input[i].split("")
