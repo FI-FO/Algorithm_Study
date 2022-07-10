@@ -23,3 +23,6 @@ function solution(p,n)
 function isTenOver(num) {
     return num < 10 ? "0" + num : num
 }
+
+console.log(solution("PM 01:00:00", 10))
+console.log(solution("PM 11:59:59", 1))

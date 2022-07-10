@@ -15,3 +15,6 @@ function solution(s)
     let answer = str !== "" ? 0 : 1
     return answer;
 }
+
+console.log(solution("baabaa"))
+console.log(solution("cdcd"))

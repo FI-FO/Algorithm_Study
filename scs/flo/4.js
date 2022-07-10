@@ -42,3 +42,6 @@ function solution(numbers) {
     let answer = strNumArr;
     return answer;
 }
+
+console.log(solution([6, 1, 8]))
+console.log(solution([4, 5, 11]))
