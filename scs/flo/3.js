@@ -1,3 +1,5 @@
+// 불필요 변수사용 틀리거나 부분점수
+
 function solution(s)
 {
     let str = s
