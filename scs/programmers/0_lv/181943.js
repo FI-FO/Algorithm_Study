@@ -10,5 +10,5 @@ function solution(my_string, overwrite_string, s) {
     return answer;
 }
 
-// solution("He11oWor1d", "lloWorl", 2); // HelloWorld
-// solution("Program29b8UYP", "merS123", 7); // ProgrammerS123
+solution("He11oWor1d", "lloWorl", 2); // HelloWorld
+solution("Program29b8UYP", "merS123", 7); // ProgrammerS123

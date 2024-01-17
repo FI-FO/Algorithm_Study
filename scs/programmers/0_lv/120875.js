@@ -9,7 +9,5 @@ function solution(dots) {
 		return answer;
 }
 
-var case1 = solution([[1, 4], [9, 2], [3, 8], [11, 6]]); // 1
-console.log('case1', case1);
-var case2 = solution([[3, 5], [4, 1], [2, 4], [5, 10]]); // 0
-console.log('case2', case2);
+solution([[1, 4], [9, 2], [3, 8], [11, 6]]); // 1
+solution([[3, 5], [4, 1], [2, 4], [5, 10]]); // 0

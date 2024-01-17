@@ -41,8 +41,7 @@ function solution(n) {
 		return answer;
 }
 
-var case1 = solution(4);
-console.log(case1);
+solution(4);
 /**
  * [
 	* [1, 2, 3, 4],
@@ -52,8 +51,7 @@ console.log(case1);
  * ]
  	*/
 
-var case2 = solution(5);
-console.log(case2);
+solution(5);
 /**
  * [
 	* [1, 2, 3, 4, 5],
