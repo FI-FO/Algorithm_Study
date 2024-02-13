@@ -9,10 +9,6 @@ function solution(n ,k) {
 	while (number % BigInt(k) != 0) {
 			number = BigInt(number.toString() + n.toString());
 			answer++;
-
-			if(answer > 1e9) {
-				return -1;
-			}
 	}
 
 	return answer;
