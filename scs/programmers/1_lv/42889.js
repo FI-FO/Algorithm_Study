@@ -2,22 +2,9 @@ function solution(N, stages) {
 	const hashMap = new Map();
 
 	for(let i = 1; i <= N; i++) {
-		let stageClear = 0;
-		let stageFail = 0;
-
-		for(let j = 0; j < stages.length; j++) {
-			if(i <= stages[j]) {
-				stageClear += 1;
-			}
-		}
-
-		for(let k = 0; k < stages.length; k++) {
-			if(stages[k] == i) {
-				stageFail += 1;
-			}
-		}
-
-		hashMap.set(i, stageFail / stageClear);
+		const clear = stages.filter((stage) => stage >= i).length;
+		const fail = stages.filter((stage) => stage === i).length;
+		hashMap.set(i, fail / clear);
 	}
 
 	return [...hashMap].sort((a, b) => b[1] - a[1]).map(e => e[0]);;
