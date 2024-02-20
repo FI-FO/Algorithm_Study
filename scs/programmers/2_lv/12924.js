@@ -1,0 +1,12 @@
+function solution(n) {
+	let answer = 0;
+	let  i = 0;
+	while(n > 0) {
+		i++;
+		if(n % i === 0) answer++;
+		n -= i;
+	}
+	return answer;
+}
+
+console.log(solution(15)); // 4
